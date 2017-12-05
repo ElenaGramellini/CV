@@ -1,0 +1,260 @@
+\documentclass[10pt]{article}
+\usepackage[applemac]{inputenc}
+\usepackage{bbm,epigraph,cmbright}
+\usepackage[english]{babel}
+\usepackage{amssymb,amsmath,amsfonts}
+\usepackage{calc}
+\reversemarginpar
+\usepackage[paper=a4paper,
+            marginparwidth=30.5mm,    % Length of section titles
+            marginparsep=1.mm,       % Space between titles and text
+            margin=25mm,              % 25mm margins
+            includemp]{geometry}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+\setlength{\parindent}{0in}
+\usepackage{eurosym}
+\usepackage{paralist}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+                    \hfill \,}}
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+\newcommand{\Nsection}[2]%
+        {\pagebreak[2]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.8\baselineskip}}
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%\usepackage[none]{hyphenat}
+
+
+\hyphenation{phe-no-me-no-lo-gi-cal}
+
+
+
+
+
+
+
+\begin{document}
+
+\makeheading{Elena Gramellini\hfill CV}
+
+\Nsection{Contact Information}
+\newlength{\rcollength}\setlength{\rcollength}{1.85in}%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+\emph{Currently at:} \href{http://physics.yale.edu/}%
+     {Department of Physics}  
+\href{http://physics.yale.edu/}{Yale University} & \\
+\emph{Web:}  \href{https://www.elenagramellini.com}{elenagramellini.com} &\\ 
+\textit{E-mail:}  \href{mailto:elena.gramellini@yale.edu}{elena.gramellini@yale.edu} & %
+\end{tabular}
+
+\Nsection{Research Interests}
+Intensity Frontier \& Neutrino Physics, GUT and Flavor Physics.  \\Liquid Argon Neutrino Detectors. Machine learning.  \\
+
+\Nsection{Education}
+\href{http://physics.yale.edu/}{\textbf{Yale University}}, 
+New Haven, CT, USA 
+\begin{outerlist}
+
+\item[] \textbf{Phd candidate}, \hfill  August 2013 - current
+	\begin{innerlist}
+	\item[] Advisors: Prof. Bonnie Fleming\footnote{Yale University \& Fermilab}, Prof. Flavio Cavanna\footnotemark[1]
+	\item[] Area of Study: Neutrino Physics, Hadron Cross Sections, LArTPC
+	\end{innerlist}
+\end{outerlist}
+\vspace{0.5cm}
+
+
+\href{http://www.scienze.unibo.it/}{\textbf{University of Bologna}}, 
+Bologna, Italy
+\begin{outerlist}
+\item[] \textbf{M.S. in  Nuclear and Particle Physics},  \hfill March 2012
+	\begin{innerlist}
+	\item[] Thesis Title: Study of low p$_{T}$ D$^0$ meson production cross section\\ at CDF II in $p \bar p$ collisions at $\sqrt s$ = 900 GeV.
+	\item[] Advisor: Prof. Stefano Zucchelli\footnote{Department of Physics and Astronomy, University of Bologna, Bologna\label{ercolessi}}
+	\item[] Area of Study: Flavor Physics, Charm Production at Colliders
+	\end{innerlist}
+	
+\item[] \textbf{B.S. in Physics},  \hfill December 2009
+        \begin{innerlist}
+        \item[] Thesis Title: Optimization of the vertex reconstruction \\in OPERA neutrino interaction events.
+        \item[] Advisor: Prof. Maximiliano Sioli\footnotemark[2]
+        \item[] Area of study: Neutrino Physics, Data Analysis
+        \end{innerlist}
+\end{outerlist}
+\vspace{0.5cm}
+
+\textbf{Professional training}
+\begin{innerlist}
+\item[] International Neutrino Summer School \hfill August 2017
+\item[]  Alan Alda Center scientific communication workshop  \hfill May 2017
+\item[]  APS Short Course on Nuclear Weapon and Related Security Issues  \hfill April 2017
+\item[] Phystat-Nu Fermilab, statistics for neutrino physics workshop \hfill September 2016 
+\item[] Fermilab Summer School \hfill Summer 2010
+\end{innerlist}
+
+
+
+\Nsection{Awards \& scholarships}
+\begin{outerlist}
+\item[] 2017-2018 Dean’s Emerging Scholars Research Award  \hfill 2017\\
+\emph{Yale Office of the Provost and Graduate School of Arts and Sciences}
+\item[]Best poster at the 2017 International Neutrino Summer School, INSS \hfill 2017\\
+\emph{A study of charged kaon-nucleon total interaction cross section }
+\item[]URA Visiting Scholar Program Award   \hfill2015\\
+\emph{Award for the peer-reviewed proposal}\\\emph{``Study of nucleon decay topologies and their background in LArTPCs"}
+\item[]Leigh Page Prize, Yale University  \hfill2013\\
+\emph{Academic Based Award for Incoming Graduate Students}
+\item[]Scholarship for international thesis   \& \hfill2011-2012\\
+Scholarship for the deepening of an international thesis, \\
+\emph{University of Bologna Awards for the peer-reviewed proposal}\\\emph{``Measurement of D$^0$ production cross section at the CDF experiment"}
+
+\item[]Placed 3$^{rd}$ in the contest “Inventare il futuro,\hfill2011\\ 
+\emph{University of Bologna Awards for a peer-reviewed proposal}\\ \emph{on technology applications to welfare}
+\item[]Scholarship ``Orfani Enasarco", \hfill2010, 2008-2006, 2004, 2003\\
+Enasarco Foundation 
+\end{outerlist}
+	
+	
+
+	
+\Nsection{Committee \& Academic Service}
+\begin{outerlist}
+	\item[-] Fermilab Students and Postdocs Association elected fellow \hfill 2015-2016
+\begin{innerlist}	
+\item[+] Head organizer of the 2016 New Perspectives conference
+\item[+] Regular participation to the Fermilab User Executive Committee
+\item[+] Participant in the Fermilab Visit to the US Congress 2016
+\end{innerlist}		
+
+\item[-] Elected member of the Climate and Diversity Committee \hfill  2014-ongoing\\ for the Yale physics department
+
+\end {outerlist}
+
+
+
+%\newpage
+\Nsection{Teaching \& Mentoring}
+\begin{outerlist}
+	\item [-] Mentored Students: William De Rocco (undergrad), Daniel Smith (undergrad), Marina Guzzo (master student), Ohana Rodrigues (master student), Supraja Balasubramanian (PhD candidate).
+	\item [-] LArSoft, Grid and Data Handling tutorials \hfill2014-current\\for the LArIAT Collaboration \& LArSoft users
+	\item [-] Teaching Fellow, Lab Instructor for P165, Yale University \hfill2014-2015
+	\item [-] Teaching Fellow, Discussion Leader for P180-P181, Yale University \hfill2013-2014
+	\item [-] Teaching Fellow for the “Fisica t-a” (General Physics) class  \hfill2012-2013 \\ in mechanical engineering , University of Bologna 
+%	\item [-] Math and Physics tutoring for Middle school and high school students \hfill2011-2013
+\end {outerlist}
+
+
+
+%\end{outerlist}
+\Nsection{Talks, Posters \& Presentations}
+%I present regularly at the MicroBooNE and LArIAT Collaboration meetings and group meetings. What follows is the list of presentations given outside my collaborations.\\
+\textbf{Invited talks:}
+\begin{outerlist}
+	\item[-] Physics Department Seminar, \emph{University of Bologna \& INFN}, $Italy$	\hfill Upcoming \\
+	``Liquid Argon detectors for Neutrino Physics @FNAL"
+	\item[-] High Energy Physics Group Seminar, \emph{Imperial College London}, $UK$	\hfill Nov 2017 \\
+	``Liquid Argon under investigation: first results from the LArIAT experiment"
+	\item[-] 2$^{nd}$ UK LArSoft Workshop, \emph{Manchester University}, $UK$	\hfill Oct 2017 \\
+	 ``LArSoft Architecture, MC and Grid Submission"
+	\item[-]  Joint SBN-DUNE Meeting,  \emph{Fermilab}, $IL$ \hfill May 2017 \\
+	``MuCS measurements and CRT measurements" 
+	\item[-] Niel Bohr Lunch Seminar, \emph{Manchester University}, $UK$	\hfill Jan 2017 \\
+	``Liquid Argon under investigation: first results from the LArIAT experiment"
+	\item[-]  WIDG Seminar, \emph{Yale University}, New Haven, $CT$	\hfill May 2016 \\
+	``LArIAT: Total $\pi-Ar$ cross section measurement"
+\end{outerlist}
+\vspace{0.5cm}
+
+\textbf{Other Contributions at International Conferences:}
+\begin{outerlist}
+	\item[-]  DPF 2017 (Talk), $Fermilab$, $IL$   \hfill August 2017 \\
+	``A study of the inclusive hadronic kaon-argon \\interaction cross section"
+	\item[-]   INSS 2017 (Poster), $Fermilab$, $IL$  \hfill August 2017 \\
+	``A study of the inclusive hadronic kaon-argon \\interaction cross section" 
+	\item[-]  ICHEP 2016 (Poster),  $Chicago$, $IL$  \hfill August 2016 \\
+	``A MC study of kaon identification sensitivity in MicroBooNE"                       
+	\item[-] ICHEP 2016 (Poster),  $Chicago$, $IL$ \hfill August 2016 \\
+	``Study of the positive kaon total interaction cross section\\ on Ar in LArIAT"
+	\item[-]   TAUP2015 (Talk), $Turin$, $Italy$  \hfill September 2015 \\
+	``Studies of cosmogenic background to nucleon decay\\ in MicroBooNE``                  
+	\item[-]  New Perspectives 2015 (Talk), $Fermilab$, $IL$  \hfill June 2015 \\
+	``LArIAT - Liquid Argon In A Testbeam`` 
+	\item[-] CIPANP2015 (Talk),  $Veil$, $CO$	  \hfill May 2015 \\
+	``LArIAT - Liquid Argon In A Testbeam``
+\end{outerlist}
+
+
+
+
+
+\Nsection{Outreach \& Interpersonal Skills}
+I regularly participate in outreach activities: to see some of my contributions,  please visit \href{https://www.elenagramellini.com/outreach}{www.elenagramellini.com/outreach}.
+\begin{outerlist}
+	\item[-] MicroBooNE tour guide \hfill  2015-ongoing
+	\item[-] Ask-A-Scientist participant for the 2017 Fermilab Open House \hfill September 2017
+	\item[-] Speaker at the TechSavvy initiative for middle school girls in STEM \hfill  March 2017
+	\item[-] PechaKucha Speaker at the Batavia PechaKucha night Vol.6  \hfill  February 2017	
+	\item[-] Participant to the DUNE outreach initiative ``We are DUNE " \hfill   February 2017
+	\item[-] Virtual Reality tour guide for the Fermilab Family Open House \hfill   February 2017
+	\item[-] Fermilab tour guide for the \\National Society of Black Physicists conference \hfill October 2016
+	\item[-] Panelist for Discussion with Students from Rwanda (ICHEP2016) \hfill August 2016
+	\item[-] Presenter for   Wicked Science ``STEM and Girls" initiative \hfill June 2016
+	\item[-] Participant to the Fermilab outreach initiative\\ ``Why I love Neutrinos " \hfill  December 2015
+	\item[-] Facilitator in the Yale Physics Olympics for high school students \hfill April 2014
+	\item[-] Tour guide for the exposition "The energy of the void" (INFN) \hfill   January 2013
+
+
+	\item[-] Professional basketball player  \hfill 2005-2006
+\end {outerlist}
+
+
+\Nsection{Programming \& Computing Skills}
+\begin{outerlist}
+	\item [-] Programming languages: C/C++, Python.
+	\item [-] Simulation packages: GEANT4, Genie.
+	\item [-] Data analysis: ROOT (C++), PyROOT, Art \& LArSoft, Samweb.
+	\item [-] Other Software:   \LaTeX, Mathematica, Photoshop.
+	\item [-] Data base experience with MySQL, xml.
+	\item [-] Operating systems: Linux and Unix-based Operating Systems.	
+\end {outerlist}
+\blankline
+
+
+\blankline
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
